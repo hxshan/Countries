@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useMemo } from "react";
-import { useGetAllCountriesQuery } from "../features/countries/CountriesApi";
+import { useGetAllCountriesQuery } from "../features/countries/countriesApi";
 import CountryCard from "../components/CountryCard";
 
 const Search = () => {

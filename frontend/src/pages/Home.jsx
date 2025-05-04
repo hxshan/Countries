@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import { useGetAllCountriesQuery } from "../features/countries/CountriesApi";
+import { useGetAllCountriesQuery } from "../features/countries/countriesApi";
 import CountryCard from "../components/CountryCard";
 
 const Home = () => {

@@ -2,7 +2,7 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import Region from '../../../pages/Region';
 
-vi.mock('../../../features/countries/CountriesApi', () => ({
+vi.mock('../../../features/countries/countriesApi', () => ({
   useGetRegionsQuery: vi.fn(),
   useGetCountriesByRegionQuery: vi.fn()
 }));
@@ -18,7 +18,7 @@ describe('Region Component Unit Tests', () => {
   
   beforeEach(async () => {
     
-    const api = await import('../../../features/countries/CountriesApi');
+    const api = await import('../../../features/countries/countriesApi');
     useGetRegionsQuery = api.useGetRegionsQuery;
     useGetCountriesByRegionQuery = api.useGetCountriesByRegionQuery;
     

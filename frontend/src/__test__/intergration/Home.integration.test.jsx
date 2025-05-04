@@ -7,7 +7,7 @@ import { setupServer } from 'msw/node';
 import Home from '../../pages/Home';
 import themeReducer from '../../features/theme/themeSlice';
 import favoriteReducer from '../../features/countries/favoritesSlice';
-import { countriesApi } from '../../features/countries/CountriesApi';
+import { countriesApi } from '../../features/countries/countriesApi';
 
 const createTestStore = (preloadedState = {}) => {
   return configureStore({

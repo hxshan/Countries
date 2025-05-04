@@ -1,5 +1,5 @@
 import React from "react";
-import { useGetCountriesByCodesQuery } from "../features/countries/CountriesApi";
+import { useGetCountriesByCodesQuery } from "../features/countries/countriesApi";
 import { Globe } from 'lucide-react';
 import BorderCountryCard from "./BorderCountryCard";
 const BorderCountries = ({ borderCodes }) => {

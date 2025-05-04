@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useGetCountriesByRegionQuery, useGetRegionsQuery } from '../features/countries/CountriesApi';
+import { useGetCountriesByRegionQuery, useGetRegionsQuery } from '../features/countries/countriesApi';
 import CountryCard from '../components/CountryCard';
 
 const Region = () => {

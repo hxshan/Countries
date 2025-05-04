@@ -6,7 +6,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { http, HttpResponse } from 'msw';
 import { setupServer } from 'msw/node';
 import Region from '../../pages/Region';
-import { countriesApi } from '../../features/countries/CountriesApi';
+import { countriesApi } from '../../features/countries/countriesApi';
 
 
 vi.mock('../../components/CountryCard', () => ({

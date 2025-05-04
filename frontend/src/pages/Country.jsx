@@ -1,5 +1,5 @@
 import React from 'react'
-import {useGetCountryByNameQuery } from '../features/countries/CountriesApi'
+import {useGetCountryByNameQuery } from '../features/countries/countriesApi'
 import { useParams } from 'react-router-dom'
 import InfoFeild from '../components/InfoFeild';
 import { MapPin, Globe, Users, Calendar, DollarSign, Flag, Mountain } from 'lucide-react'
