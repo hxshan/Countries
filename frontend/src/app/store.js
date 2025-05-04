@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import themeReducer from '../features/theme/themeSlice';
-import { countriesApi } from '../features/countries/CountriesApi';
+import { countriesApi } from '../features/countries/countriesApi';
 import  favoriteReducer  from '../features/countries/favoritesSlice';
 
 export const store = configureStore({
