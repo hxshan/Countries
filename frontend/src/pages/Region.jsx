@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useGetCountriesByRegionQuery, useGetRegionsQuery } from '../features/countries/countriesApi';
 import CountryCard from '../components/CountryCard';
-
+import { RingLoader } from 'react-spinners';
 const Region = () => {
     const [selectedRegion, setSelectedRegion] = useState('');
     const { data: regions, error:regionsLoading, isLoading:regionsError } = useGetRegionsQuery();   
@@ -56,9 +56,7 @@ const Region = () => {
             {selectedRegion && (
               <>
                 {countriesLoading ? (
-                  <div className="flex justify-center items-center py-20">
-                    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#4CAF50] dark:border-[#9EFF00]"></div>
-                  </div>
+                  <RingLoader color="#00ff01" />
                 ) : countries && countries.length > 0 ? (
                   <>
                     <h2 className="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">

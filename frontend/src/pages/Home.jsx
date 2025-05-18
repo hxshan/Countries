@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import { useGetAllCountriesQuery } from "../features/countries/countriesApi";
 import CountryCard from "../components/CountryCard";
-
+import { RingLoader } from "react-spinners";
 const Home = () => {
   const { data, error, isLoading } = useGetAllCountriesQuery();
   return (
@@ -10,13 +10,14 @@ const Home = () => {
       <Header />
       <div className="bg-white dark:bg-[#18181C] shadow-[inset_0_0_30px_rgba(76,175,80,0.12)] dark:shadow-[inset_0_0_30px_rgba(158,255,0,0.1)]">
         {isLoading && (
-          <div
-            role="status"
-            aria-live="polite"
-            className="flex justify-center items-center py-20"
-          >
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#4CAF50] dark:border-[#9EFF00]"></div>
-          </div>
+          <RingLoader color="#00ff01" />
+          // <div
+          //   role="status"
+          //   aria-live="polite"
+          //   className="flex justify-center items-center py-20"
+          // >
+          //   <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#4CAF50] dark:border-[#9EFF00]"></div>
+          // </div>
         )}
 
         {error && (
